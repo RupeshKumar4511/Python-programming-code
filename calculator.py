@@ -1,4 +1,5 @@
 # This is a Simple calculator which performs addition, subtraction, multiplication, division ,Integer division,reminder after dision.
+
 def add(x,y):
     return x+y
 def subtract(x,y):
@@ -33,30 +34,29 @@ print("Reminder :  % ")
 print("Floor Division :  // ")
 
 
-
 try:
      a = eval(input("enter number : "))
      c = input("enter operation ")
      b = eval(input("enter number : "))
-     list1 =[]
+     result =0;
      if(c== "+"):
           sum = add(a,b)
-          list1.append(sum)
+          result = sum
           print("result :",sum)
      elif(c=='-'):
           sub = subtract(a,b)
-          list1.append(sub)
+          result = sub
           print("result :",sub)
 
      elif(c== '*'):
          
          mul = multiply(a,b)
-         list1.append(mul)
+         result = mul
          print("result :",mul)
 
      elif(c== '/'):
          div = divide(a,b)
-         list1.append(div)
+         result = div
          print("result :",div)
      else:
            print("InValid operation")
@@ -69,38 +69,38 @@ try:
           d = input("enter operation : ")
           if(d == '+'):
                e = eval(input("enter number : "))
-               sum = add(list1[0],e)
-               list1.insert(0,sum)
-               print("result :",sum)
+               sum2 = add(result,e)
+               result = sum2
+               print("result :",sum2)
 
                num += 1 
                continue
           
           elif(d == '-'):
                e = eval(input("enter number : "))
-               sub = subtract(list1[0],e)
-               list1.insert(0,sub)
-               print("result :",sub)
+               sub2 = subtract(result,e)
+               result = sub2
+               print("result :",sub2)
                num += 1 
                continue
 
           elif(d == '*'):
                e = eval(input("enter number : "))
-               mul = multiply(list1[0],e)
-               list1.insert(0,mul)
-               print("result :",mul)
+               mul2 = multiply(result,e)
+               result = mul2
+               print("result :",mul2)
                num += 1
                continue
 
           elif(d == '/'):
               e = eval(input("enter number : "))
-              div = divide(list1[0],e)
-              list1.insert(0,div)
+              div2 = divide(result,e)
+              result = div2
               print("result :",div)
               num += 1
               continue
           elif(d == '='):
-              print(list1[0])
+              print(result)
               num += 1
               continue
 
@@ -111,8 +111,23 @@ try:
 except:
      print("wrong enteries")
     
+
+
+    
+     
              
     
+
+
+
+        
+     
+     
+
+
+
+
+
 
 
 
