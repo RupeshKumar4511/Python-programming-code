@@ -63,8 +63,8 @@ try:
 
 
 
-     num = 0
-     while(num != 100000):
+     
+     while(True):
      
           d = input("enter operation : ")
           if(d == '+'):
@@ -73,44 +73,39 @@ try:
                result = sum2
                print("result :",sum2)
 
-               num += 1 
-               continue
+               
           
           elif(d == '-'):
                e = eval(input("enter number : "))
                sub2 = subtract(result,e)
                result = sub2
                print("result :",sub2)
-               num += 1 
-               continue
+               
 
           elif(d == '*'):
                e = eval(input("enter number : "))
                mul2 = multiply(result,e)
                result = mul2
                print("result :",mul2)
-               num += 1
-               continue
+               
 
           elif(d == '/'):
               e = eval(input("enter number : "))
               div2 = divide(result,e)
               result = div2
               print("result :",div)
-              num += 1
-              continue
+              
+
           elif(d == '='):
               print(result)
-              num += 1
-              continue
+              break
 
           else:
               print("wrong operation")
 
-          num += 1
+          
 except:
      print("wrong enteries")
-    
 
 
     
